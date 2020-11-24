@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="all_types_array">
+        <item>Choose Type</item>
+        <item>Budget</item>
+        <item>Expense</item>
+        <item>Saving</item>
+    </string-array>
+
+    <string-array name="types_array">
+        <item>Budget</item>
+        <item>Expense</item>
+        <item>Saving</item>
+    </string-array>
+
+    <string-array name="incomes_array">
+        <item>Salary</item>
+        <item>Investment</item>
+        <item>Scholarship</item>
+        <item>Part-time Job</item>
+        <item>Loan</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="expenses_primary_array">
+        <item>Food</item>
+        <item>Transportation</item>
+        <item>Amusement</item>
+        <item>Shopping</item>
+        <item>Household</item>
+        <item>Communication</item>
+        <item>Study</item>
+        <item>Relations</item>
+        <item>Medical</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="food_array">
+        <item>Meals</item>
+        <item>Drinks</item>
+        <item>Fruits</item>
+        <item>Snacks</item>
+        <item>Party</item>
+    </string-array>
+
+    <string-array name="transportation_array">
+        <item>Public Transportation</item>
+        <item>Bicycle</item>
+        <item>Taxi</item>
+    </string-array>
+
+    <string-array name="amusement_array">
+        <item>Movie</item>
+        <item>KTV</item>
+        <item>Sports</item>
+        <item>Game</item>
+        <item>Club</item>
+        <item>Travel</item>
+        <item>Pets</item>
+    </string-array>
+
+    <string-array name="shopping_array">
+        <item>Clothes</item>
+        <item>Shoes Bags</item>
+        <item>Makeups</item>
+        <item>Necessities</item>
+        <item>Sports Equipments</item>
+        <item>Digital Tools</item>
+    </string-array>
+
+    <string-array name="household_array">
+        <item>Rent</item>
+        <item>Utilities</item>
+        <item>Furniture</item>
+        <item>Fix</item>
+    </string-array>
+
+    <string-array name="communication_array">
+        <item>Phone Bill</item>
+        <item>Internet Fee</item>
+        <item>Postal Fee</item>
+    </string-array>
+
+    <string-array name="study_array">
+        <item>Stationery</item>
+        <item>Textbook</item>
+        <item>Tuition Fee</item>
+        <item>Other Books</item>
+    </string-array>
+
+    <string-array name="relations_array">
+        <item>Gifts</item>
+        <item>Donations</item>
+    </string-array>
+
+    <string-array name="medical_array">
+        <item>Medicine</item>
+        <item>Treatment Costs</item>
+        <item>Outpatient Fee</item>
+    </string-array>
+
+    <string-array name="others_array">
+        <item>Lost</item>
+        <item>Others</item>
+    </string-array>
+
+</resources>

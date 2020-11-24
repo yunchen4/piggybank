@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/register_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/title_register"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/register_card"
+        android:layout_width="match_parent"
+        android:layout_height="354dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="32dp"
+        android:src="@drawable/shape_login_card_background"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_title" />
+
+    <EditText
+        android:id="@+id/register_username_edit"
+        android:layout_width="228dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/shape_userinfo_input_background"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_"
+        android:fontFamily="sans-serif"
+        android:maxLength="16"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/register_card"
+        app:layout_constraintStart_toStartOf="@+id/register_card"
+        app:layout_constraintTop_toBottomOf="@+id/register_username_label"
+        tools:text="ExampleUsername"
+        android:hint="@string/hint_username_restriction"/>
+
+    <TextView
+        android:id="@+id/register_username_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/label_username"
+        android:textColor="@color/colorTextLight"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/register_username_edit"
+        app:layout_constraintTop_toTopOf="@+id/register_card" />
+
+    <TextView
+        android:id="@+id/register_pwd_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/label_pwd"
+        android:textColor="@color/colorTextLight"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/register_pwd_edit"
+        app:layout_constraintTop_toBottomOf="@+id/register_username_edit" />
+
+    <EditText
+        android:id="@+id/register_pwd_edit"
+        style="@style/TextAppearance.AppCompat"
+        android:layout_width="228dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/shape_userinfo_input_background"
+        android:fontFamily="sans-serif"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/register_card"
+        app:layout_constraintStart_toStartOf="@+id/register_card"
+        app:layout_constraintTop_toBottomOf="@+id/register_pwd_label"
+        tools:text="ExamplePassword"
+        android:hint="@string/hint_pwd_restriction"/>
+
+    <TextView
+        android:id="@+id/register_confirm_pwd_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/label_confirm_pwd"
+        android:textColor="@color/colorTextLight"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/register_confirm_pwd_edit"
+        app:layout_constraintTop_toBottomOf="@+id/register_pwd_edit" />
+
+    <EditText
+        android:id="@+id/register_confirm_pwd_edit"
+        style="@style/TextAppearance.AppCompat"
+        android:layout_width="228dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/shape_userinfo_input_background"
+        android:fontFamily="sans-serif"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/register_card"
+        app:layout_constraintStart_toStartOf="@+id/register_card"
+        app:layout_constraintTop_toBottomOf="@+id/register_confirm_pwd_label"
+        tools:text="ExamplePassword" />
+
+    <TextView
+        android:id="@+id/register_email_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/label_email"
+        android:textColor="@color/colorTextLight"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/register_confirm_pwd_edit"
+        app:layout_constraintTop_toBottomOf="@+id/register_confirm_pwd_edit" />
+
+    <EditText
+        android:id="@+id/register_email_edit"
+        style="@style/TextAppearance.AppCompat"
+        android:layout_width="228dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/shape_userinfo_input_background"
+        android:fontFamily="sans-serif"
+        android:inputType="textEmailAddress"
+        android:maxLength="16"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/register_card"
+        app:layout_constraintStart_toStartOf="@+id/register_card"
+        app:layout_constraintTop_toBottomOf="@+id/register_email_label"
+        tools:text="ExamplePassword" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="228dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/btn_login"
+        android:fontFamily="sans-serif"
+        android:text="@string/btn_register"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/register_email_edit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/register_email_edit"
+        app:layout_constraintTop_toBottomOf="@+id/register_email_edit" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

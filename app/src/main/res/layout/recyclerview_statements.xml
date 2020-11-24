@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:background="@drawable/selector_statement">
+
+    <ImageView
+        android:id="@+id/statement_type_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/statement_secondary_category_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textSize="16sp"
+        tools:text="Public Transportation"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/statement_type_icon"
+        android:layout_marginStart="16dp"/>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/statement_memo_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="statement_memo_tv"/>
+
+    <TextView
+        android:id="@+id/statement_memo_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textSize="12sp"
+        tools:text="Train"
+        app:layout_constraintTop_toBottomOf="@+id/statement_secondary_category_tv"
+        app:layout_constraintStart_toStartOf="@+id/statement_secondary_category_tv"
+        android:layout_marginTop="2dp"/>
+
+    <TextView
+        android:id="@+id/statement_date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textSize="12sp"
+        tools:text="2020/05/01"
+        app:layout_constraintTop_toBottomOf="@+id/statement_memo_barrier"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="@+id/statement_secondary_category_tv"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/statement_amount_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bebas_regular"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        tools:text="350.00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

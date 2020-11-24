@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/guide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/welcome_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/title_welcome"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/login_card"
+        android:layout_width="match_parent"
+        android:layout_height="264dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="32dp"
+        android:src="@drawable/shape_login_card_background"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_title" />
+
+    <EditText
+        android:id="@+id/username_edit"
+        android:layout_width="228dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/shape_userinfo_input_background"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_"
+        android:fontFamily="sans-serif"
+        android:maxLength="16"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/login_card"
+        app:layout_constraintStart_toStartOf="@+id/login_card"
+        app:layout_constraintTop_toBottomOf="@+id/username_label"
+        tools:text="ExampleUsername" />
+
+    <TextView
+        android:id="@+id/forget_pwd_entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/entry_forget_pwd"
+        android:textColor="@color/colorTextDark"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/pwd_label"
+        app:layout_constraintEnd_toEndOf="@+id/pwd_edit"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/pwd_label"
+        app:layout_constraintTop_toTopOf="@+id/pwd_label" />
+
+    <TextView
+        android:id="@+id/username_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/label_username"
+        android:textColor="@color/colorTextLight"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/username_edit"
+        app:layout_constraintTop_toTopOf="@+id/login_card" />
+
+    <TextView
+        android:id="@+id/pwd_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/label_pwd"
+        android:textColor="@color/colorTextLight"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/pwd_edit"
+        app:layout_constraintTop_toBottomOf="@+id/username_edit" />
+
+    <EditText
+        android:id="@+id/pwd_edit"
+        style="@style/TextAppearance.AppCompat"
+        android:layout_width="228dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/shape_userinfo_input_background"
+        android:fontFamily="sans-serif"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/login_card"
+        app:layout_constraintStart_toStartOf="@+id/login_card"
+        app:layout_constraintTop_toBottomOf="@+id/pwd_label"
+        tools:text="ExamplePassword" />
+
+    <TextView
+        android:id="@+id/register_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/label_register"
+        android:textColor="@color/colorTextDark"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="@+id/login_button"
+        app:layout_constraintTop_toBottomOf="@+id/login_button" />
+
+    <TextView
+        android:id="@+id/register_entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/entry_register"
+        android:textColor="@color/colorTextLight"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/register_label"
+        app:layout_constraintEnd_toEndOf="@+id/login_button"
+        app:layout_constraintTop_toTopOf="@+id/register_label" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="228dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/btn_login"
+        android:fontFamily="sans-serif"
+        android:text="LOGIN"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/pwd_edit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/pwd_edit"
+        app:layout_constraintTop_toBottomOf="@+id/pwd_edit" />
+
+    <TextView
+        android:id="@+id/skip_entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/entry_skip_login"
+        android:textColor="@color/colorTextDark"
+        android:textStyle="normal"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="110dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

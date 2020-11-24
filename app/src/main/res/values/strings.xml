@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">PiggyBank</string>
+
+    <string name="label_monthly_budget">Monthly Budget</string>
+    <string name="label_monthly_savings">Monthly Savings</string>
+    <string name="label_monthly_expenses">EXPENDITURE</string>
+    <string name="label_today">Today</string>
+    <string name="label_total_expenses">Total Expenditure</string>
+    <string name="label_total_savings">Total Savings</string>
+
+    <string name="label_no_statements">NO STATEMENTS</string>
+    <string name="label_no_plans">NO PLANS</string>
+
+    <string name="dialog_title_completed">Congratulations!</string>
+    <string name="dialog_message_completed">You just completed your saving plan!</string>
+    <string name="dialog_title_failed">Sorry...</string>
+    <string name="dialog_button_completed">Cheers!</string>
+    <string name="dialog_button_failed">I know</string>
+
+    <string name="dialog_title_logout">Log Out Confirmation</string>
+    <string name="dialog_message_logout">If you log out, all your local data will disappear. </string>
+    <string name="dialog_btn_logout_confirm">I Still Want</string>
+    <string name="dialog_btn_logout_cancel">Cancel</string>
+
+    <string name="action_login">Login</string>
+    <string name="action_register">Register</string>
+    <string name="action_logout">Log Out</string>
+
+    <string name="entry_forget_pwd">Forget Password?</string>
+    <string name="entry_register">Register</string>
+    <string name="entry_skip_login">I want to try first</string>
+
+    <string name="label_username">Username</string>
+    <string name="label_pwd">Password</string>
+    <string name="label_email">Email</string>
+    <string name="label_new_pwd">New Password</string>
+    <string name="label_confirm_pwd">Confirm Password</string>
+    <string name="label_register">Have not registered?</string>
+
+
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_reset_pwd">RESET</string>
+
+    <string name="hint_category">Choose the category</string>
+    <string name="hint_date">Choose the date</string>
+    <string name="hint_text">...</string>
+
+    <string name="hint_username_restriction">1–16 letters, numbers and _</string>
+    <string name="hint_pwd_restriction">6–16 letters, numbers and _</string>
+    <string name="hint_confirm_password">Confirm your password</string>
+
+    <string name="warning_add_statement">Please fill in amount, category and date. </string>
+    <string name="warning_add_plan">Please fill in amount, due date and punishment. </string>
+
+    <string name="label_statement_type">Type</string>
+    <string name="label_statement_category">Category</string>
+    <string name="label_statement_date">Date</string>
+    <string name="label_statement_memo">Memo</string>
+
+    <string name="label_plan_in_progress_goal">YOUR GOAL</string>
+    <string name="label_plan_in_progress_due_date">DUE DATE</string>
+    <string name="label_accomplished_text">ACCOMPLISHED</string>
+
+    <string name="label_plan_due_date">Due Date</string>
+    <string name="label_plan_punishment">Punishment</string>
+
+    <string name="label_plan_completed">COMPLETED</string>
+    <string name="label_plan_failed">FAILED</string>
+
+    <string name="btn_new_plan">NEW PLAN</string>
+
+    <string name="btn_add">ADD</string>
+    <string name="btn_delete">DELETE</string>
+    <string name="btn_update">UPDATE</string>
+
+    <string name="title_welcome">WELCOME!</string>
+    <string name="title_register">REGISTER NOW</string>
+    <string name="title_reset_pwd">RESET PASSWORD</string>
+
+</resources>
