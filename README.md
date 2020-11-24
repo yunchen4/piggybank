@@ -1,5 +1,9 @@
 # 存钱罐/Piggy Bank
 
+English Version Below
+
+Screenshots Below
+
 ## 中文版说明
 
 ### 项目概述
