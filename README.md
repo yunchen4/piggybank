@@ -14,8 +14,6 @@ Screenshots Below
 
 另：APP LOGO和内含字体、图标均来源于网络，未获得授权，仅作为作业使用。原作者可以随时联系我更换取消。
 
-（未完待续）
-
 ## English Version
 
 ### Project Description
@@ -25,8 +23,6 @@ Screenshots Below
 The basic features of "Piggy Bank" are bookkeeping and related data access. Additional features include setting saving plans and automatically checking the completion of plans. All features can be used both locally and remotely. For the remote use, the user needs to have an account and sign in.  
 
 Attention: All icons and fonts are from Internet and only used for the academic purpose(not authorized). The original authors can contact me anytime.
-
-(To be continued)
 
 ## 应用截图/Screenshots
 
